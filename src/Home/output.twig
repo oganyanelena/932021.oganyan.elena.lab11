@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('styles/base.css') }}">
+    <title>Task 11</title>
+
+</head>
+<body>
+<header>
+    <h3 class="h1-header">Backend1</h3>
+    <a class="button-header" href="">Home</a>
+</header>
+<div class="content">
+    <h1 class="content-header">Calc Service Demonstration</h1>
+    <ul>
+        <li><a href="{{ path('show_calc', {mode: 'PassUsingModel'}) }}">Using Model Calc</a></li>
+        <li><a href="{{ path('show_calc', {mode: 'PassUsingViewData'}) }}">Using ViewData Calc</a></li>
+        <li><a href="{{ path('show_calc', {mode: 'PassUsingViewBag'}) }}">Using ViewBag Calc</a></li>
+        <li><a href="{{ path('show_calc', {mode: 'AccessServiceDirectly'}) }}">Using Service Injection Calc</a></li>
+    </ul>
+</div>
+<div class="line"></div>
+<footer>© 2023 - Backend1</footer>
+</body>
+</html>
